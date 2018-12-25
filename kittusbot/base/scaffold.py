@@ -1,6 +1,7 @@
 from logging import basicConfig, getLogger, INFO, DEBUG
-from os import environ, getcwd
+from os import environ
 from json import load
+
 
 telegram_token = environ.get('KITTUSBOT_TOKEN') if 'KITTUSBOT_TOKEN' in environ else exit ("Telegram bot token not set")
 trello_api_key = environ.get('TRELLO_APIKEY') if 'TRELLO_APIKEY' in environ else exit ("Trello API key not set")
